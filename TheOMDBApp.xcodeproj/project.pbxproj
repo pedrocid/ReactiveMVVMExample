@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25276E54B59328A6B0C1EBD7 /* Pods_TheOMDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64102B5195C3DD4EDC1DB3EC /* Pods_TheOMDBAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CE385D3421B5AE82FAAF17CF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E13B7B5AE26C49D0E2781 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F5CB5EE11C8B0B3200DCD72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */; };
 		F5CB5EE31C8B0B3200DCD72E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EE21C8B0B3200DCD72E /* ViewController.swift */; };
 		F5CB5EE61C8B0B3200DCD72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE41C8B0B3200DCD72E /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20F1979F65F4FBEF89E4352E /* Pods-TheOMDBAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOMDBAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheOMDBAppTests/Pods-TheOMDBAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CCEE1F610E8934D0D3D8673 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		64102B5195C3DD4EDC1DB3EC /* Pods_TheOMDBAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheOMDBAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BCAB0A321E4993266097AD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E4231D6BEB7ED2A4A3D3E334 /* Pods-TheOMDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOMDBAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheOMDBAppTests/Pods-TheOMDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF3E13B7B5AE26C49D0E2781 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CB5EDD1C8B0B3200DCD72E /* TheOMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5CB5EE21C8B0B3200DCD72E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE385D3421B5AE82FAAF17CF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25276E54B59328A6B0C1EBD7 /* Pods_TheOMDBAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A6CCA8F9CEF442D786AB37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82BCAB0A321E4993266097AD /* Pods.debug.xcconfig */,
+				5CCEE1F610E8934D0D3D8673 /* Pods.release.xcconfig */,
+				20F1979F65F4FBEF89E4352E /* Pods-TheOMDBAppTests.debug.xcconfig */,
+				E4231D6BEB7ED2A4A3D3E334 /* Pods-TheOMDBAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A880E4D467A421E5738CB468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF3E13B7B5AE26C49D0E2781 /* Pods.framework */,
+				64102B5195C3DD4EDC1DB3EC /* Pods_TheOMDBAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5CB5ED41C8B0B3200DCD72E = {
 			isa = PBXGroup;
 			children = (
 				F5CB5EDF1C8B0B3200DCD72E /* TheOMDBApp */,
 				F5CB5EF41C8B0B3200DCD72E /* TheOMDBAppTests */,
 				F5CB5EDE1C8B0B3200DCD72E /* Products */,
+				07A6CCA8F9CEF442D786AB37 /* Pods */,
+				A880E4D467A421E5738CB468 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5CB5EFA1C8B0B3200DCD72E /* Build configuration list for PBXNativeTarget "TheOMDBApp" */;
 			buildPhases = (
+				C66592810998ACF04373D2C4 /* Check Pods Manifest.lock */,
 				F5CB5ED91C8B0B3200DCD72E /* Sources */,
 				F5CB5EDA1C8B0B3200DCD72E /* Frameworks */,
 				F5CB5EDB1C8B0B3200DCD72E /* Resources */,
+				53D48090148E2136B6A234AA /* Embed Pods Frameworks */,
+				1911B1674570450F2E114C27 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5CB5EFD1C8B0B3200DCD72E /* Build configuration list for PBXNativeTarget "TheOMDBAppTests" */;
 			buildPhases = (
+				C847B60399BEF76E03E953C7 /* Check Pods Manifest.lock */,
 				F5CB5EED1C8B0B3200DCD72E /* Sources */,
 				F5CB5EEE1C8B0B3200DCD72E /* Frameworks */,
 				F5CB5EEF1C8B0B3200DCD72E /* Resources */,
+				137E4781D3F90C24C3B5D0E9 /* Embed Pods Frameworks */,
+				BFE9D759B21F5D3C19C8F6FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		137E4781D3F90C24C3B5D0E9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheOMDBAppTests/Pods-TheOMDBAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1911B1674570450F2E114C27 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53D48090148E2136B6A234AA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE9D759B21F5D3C19C8F6FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheOMDBAppTests/Pods-TheOMDBAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66592810998ACF04373D2C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C847B60399BEF76E03E953C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5CB5ED91C8B0B3200DCD72E /* Sources */ = {
@@ -323,6 +454,7 @@
 		};
 		F5CB5EFB1C8B0B3200DCD72E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BCAB0A321E4993266097AD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheOMDBApp/Info.plist;
@@ -334,6 +466,7 @@
 		};
 		F5CB5EFC1C8B0B3200DCD72E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCEE1F610E8934D0D3D8673 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheOMDBApp/Info.plist;
@@ -345,6 +478,7 @@
 		};
 		F5CB5EFE1C8B0B3200DCD72E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F1979F65F4FBEF89E4352E /* Pods-TheOMDBAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheOMDBAppTests/Info.plist;
@@ -357,6 +491,7 @@
 		};
 		F5CB5EFF1C8B0B3200DCD72E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4231D6BEB7ED2A4A3D3E334 /* Pods-TheOMDBAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheOMDBAppTests/Info.plist;
@@ -386,6 +521,7 @@
 				F5CB5EFC1C8B0B3200DCD72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5CB5EFD1C8B0B3200DCD72E /* Build configuration list for PBXNativeTarget "TheOMDBAppTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +530,7 @@
 				F5CB5EFF1C8B0B3200DCD72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
