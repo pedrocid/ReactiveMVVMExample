@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		25276E54B59328A6B0C1EBD7 /* Pods_TheOMDBAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64102B5195C3DD4EDC1DB3EC /* Pods_TheOMDBAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE385D3421B5AE82FAAF17CF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E13B7B5AE26C49D0E2781 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F57E7DD31C8B0CD20095B43A /* OMDBAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DD21C8B0CD20095B43A /* OMDBAPIClientTests.swift */; };
+		F57E7DD51C8B0D540095B43A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DD41C8B0D540095B43A /* APIClient.swift */; };
+		F57E7DD81C8B0E270095B43A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DD71C8B0E270095B43A /* Movie.swift */; };
+		F57E7DDA1C8B0E680095B43A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DD91C8B0E680095B43A /* ViewModel.swift */; };
+		F57E7DDC1C8B0EE60095B43A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DDB1C8B0EE60095B43A /* DetailViewModel.swift */; };
+		F57E7DE01C8B0FB80095B43A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DDF1C8B0FB80095B43A /* MovieCell.swift */; };
+		F57E7DE21C8B10140095B43A /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DE11C8B10140095B43A /* MoviesTableViewController.swift */; };
+		F57E7DE41C8B11F70095B43A /* OMDBAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DE31C8B11F70095B43A /* OMDBAPIClient.swift */; };
+		F57E7DE61C8B1A960095B43A /* OMDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DE51C8B1A960095B43A /* OMDBViewModel.swift */; };
+		F57E7DE81C8B1B230095B43A /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DE71C8B1B230095B43A /* MovieViewModel.swift */; };
+		F57E7DEA1C8B39A50095B43A /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = F57E7DE91C8B39A50095B43A /* Readme */; };
+		F57E7DEC1C8B3A500095B43A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DEB1C8B3A500095B43A /* ReusableView.swift */; };
+		F57E7DEE1C8B3AE70095B43A /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DED1C8B3AE70095B43A /* NibLoadable.swift */; };
+		F57E7DF01C8B3B530095B43A /* UITableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DEF1C8B3B530095B43A /* UITableViewHelper.swift */; };
+		F57E7DF41C8B3FA10095B43A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DF21C8B3FA10095B43A /* Network.swift */; };
+		F57E7DF51C8B3FA10095B43A /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DF31C8B3FA10095B43A /* Networking.swift */; };
 		F5CB5EE11C8B0B3200DCD72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */; };
-		F5CB5EE31C8B0B3200DCD72E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EE21C8B0B3200DCD72E /* ViewController.swift */; };
 		F5CB5EE61C8B0B3200DCD72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE41C8B0B3200DCD72E /* Main.storyboard */; };
 		F5CB5EE81C8B0B3200DCD72E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE71C8B0B3200DCD72E /* Assets.xcassets */; };
 		F5CB5EEB1C8B0B3200DCD72E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE91C8B0B3200DCD72E /* LaunchScreen.storyboard */; };
-		F5CB5EF61C8B0B3200DCD72E /* TheOMDBAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EF51C8B0B3200DCD72E /* TheOMDBAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,15 +48,30 @@
 		82BCAB0A321E4993266097AD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4231D6BEB7ED2A4A3D3E334 /* Pods-TheOMDBAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOMDBAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheOMDBAppTests/Pods-TheOMDBAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF3E13B7B5AE26C49D0E2781 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E7DD11C8B0CD10095B43A /* TheOMDBAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheOMDBAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F57E7DD21C8B0CD20095B43A /* OMDBAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBAPIClientTests.swift; sourceTree = "<group>"; };
+		F57E7DD41C8B0D540095B43A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F57E7DD71C8B0E270095B43A /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F57E7DD91C8B0E680095B43A /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F57E7DDB1C8B0EE60095B43A /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F57E7DDF1C8B0FB80095B43A /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		F57E7DE11C8B10140095B43A /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		F57E7DE31C8B11F70095B43A /* OMDBAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBAPIClient.swift; sourceTree = "<group>"; };
+		F57E7DE51C8B1A960095B43A /* OMDBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBViewModel.swift; sourceTree = "<group>"; };
+		F57E7DE71C8B1B230095B43A /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		F57E7DE91C8B39A50095B43A /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		F57E7DEB1C8B3A500095B43A /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F57E7DED1C8B3AE70095B43A /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		F57E7DEF1C8B3B530095B43A /* UITableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewHelper.swift; sourceTree = "<group>"; };
+		F57E7DF21C8B3FA10095B43A /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F57E7DF31C8B3FA10095B43A /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		F5CB5EDD1C8B0B3200DCD72E /* TheOMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5CB5EE21C8B0B3200DCD72E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5CB5EE51C8B0B3200DCD72E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5CB5EE71C8B0B3200DCD72E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5CB5EEA1C8B0B3200DCD72E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5CB5EEC1C8B0B3200DCD72E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5CB5EF11C8B0B3200DCD72E /* TheOMDBAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheOMDBAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5CB5EF51C8B0B3200DCD72E /* TheOMDBAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOMDBAppTests.swift; sourceTree = "<group>"; };
 		F5CB5EF71C8B0B3200DCD72E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,9 +115,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F57E7DD61C8B0E180095B43A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F57E7DF21C8B3FA10095B43A /* Network.swift */,
+				F57E7DF31C8B3FA10095B43A /* Networking.swift */,
+				F57E7DE31C8B11F70095B43A /* OMDBAPIClient.swift */,
+				F57E7DD41C8B0D540095B43A /* APIClient.swift */,
+				F57E7DD71C8B0E270095B43A /* Movie.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		F57E7DDD1C8B0F980095B43A /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				F57E7DD91C8B0E680095B43A /* ViewModel.swift */,
+				F57E7DDB1C8B0EE60095B43A /* DetailViewModel.swift */,
+				F57E7DE51C8B1A960095B43A /* OMDBViewModel.swift */,
+				F57E7DE71C8B1B230095B43A /* MovieViewModel.swift */,
+			);
+			name = "view models";
+			sourceTree = "<group>";
+		};
+		F57E7DDE1C8B0FA20095B43A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F57E7DF11C8B3C9F0095B43A /* helpers */,
+				F57E7DDF1C8B0FB80095B43A /* MovieCell.swift */,
+				F57E7DE11C8B10140095B43A /* MoviesTableViewController.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		F57E7DF11C8B3C9F0095B43A /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F57E7DEB1C8B3A500095B43A /* ReusableView.swift */,
+				F57E7DED1C8B3AE70095B43A /* NibLoadable.swift */,
+				F57E7DEF1C8B3B530095B43A /* UITableViewHelper.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
 		F5CB5ED41C8B0B3200DCD72E = {
 			isa = PBXGroup;
 			children = (
+				F57E7DE91C8B39A50095B43A /* Readme */,
 				F5CB5EDF1C8B0B3200DCD72E /* TheOMDBApp */,
 				F5CB5EF41C8B0B3200DCD72E /* TheOMDBAppTests */,
 				F5CB5EDE1C8B0B3200DCD72E /* Products */,
@@ -109,8 +182,10 @@
 		F5CB5EDF1C8B0B3200DCD72E /* TheOMDBApp */ = {
 			isa = PBXGroup;
 			children = (
+				F57E7DDE1C8B0FA20095B43A /* views */,
+				F57E7DDD1C8B0F980095B43A /* view models */,
+				F57E7DD61C8B0E180095B43A /* models */,
 				F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */,
-				F5CB5EE21C8B0B3200DCD72E /* ViewController.swift */,
 				F5CB5EE41C8B0B3200DCD72E /* Main.storyboard */,
 				F5CB5EE71C8B0B3200DCD72E /* Assets.xcassets */,
 				F5CB5EE91C8B0B3200DCD72E /* LaunchScreen.storyboard */,
@@ -122,8 +197,9 @@
 		F5CB5EF41C8B0B3200DCD72E /* TheOMDBAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				F5CB5EF51C8B0B3200DCD72E /* TheOMDBAppTests.swift */,
 				F5CB5EF71C8B0B3200DCD72E /* Info.plist */,
+				F57E7DD21C8B0CD20095B43A /* OMDBAPIClientTests.swift */,
+				F57E7DD11C8B0CD10095B43A /* TheOMDBAppTests-Bridging-Header.h */,
 			);
 			path = TheOMDBAppTests;
 			sourceTree = "<group>";
@@ -215,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57E7DEA1C8B39A50095B43A /* Readme in Resources */,
 				F5CB5EEB1C8B0B3200DCD72E /* LaunchScreen.storyboard in Resources */,
 				F5CB5EE81C8B0B3200DCD72E /* Assets.xcassets in Resources */,
 				F5CB5EE61C8B0B3200DCD72E /* Main.storyboard in Resources */,
@@ -328,8 +405,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CB5EE31C8B0B3200DCD72E /* ViewController.swift in Sources */,
+				F57E7DE21C8B10140095B43A /* MoviesTableViewController.swift in Sources */,
+				F57E7DE81C8B1B230095B43A /* MovieViewModel.swift in Sources */,
+				F57E7DE41C8B11F70095B43A /* OMDBAPIClient.swift in Sources */,
+				F57E7DE61C8B1A960095B43A /* OMDBViewModel.swift in Sources */,
+				F57E7DEC1C8B3A500095B43A /* ReusableView.swift in Sources */,
+				F57E7DE01C8B0FB80095B43A /* MovieCell.swift in Sources */,
+				F57E7DF51C8B3FA10095B43A /* Networking.swift in Sources */,
+				F57E7DDA1C8B0E680095B43A /* ViewModel.swift in Sources */,
+				F57E7DDC1C8B0EE60095B43A /* DetailViewModel.swift in Sources */,
+				F57E7DF01C8B3B530095B43A /* UITableViewHelper.swift in Sources */,
 				F5CB5EE11C8B0B3200DCD72E /* AppDelegate.swift in Sources */,
+				F57E7DEE1C8B3AE70095B43A /* NibLoadable.swift in Sources */,
+				F57E7DD81C8B0E270095B43A /* Movie.swift in Sources */,
+				F57E7DF41C8B3FA10095B43A /* Network.swift in Sources */,
+				F57E7DD51C8B0D540095B43A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CB5EF61C8B0B3200DCD72E /* TheOMDBAppTests.swift in Sources */,
+				F57E7DD31C8B0CD20095B43A /* OMDBAPIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,10 +571,13 @@
 			baseConfigurationReference = 20F1979F65F4FBEF89E4352E /* Pods-TheOMDBAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TheOMDBAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.TheOMDBAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheOMDBAppTests/TheOMDBAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheOMDBApp.app/TheOMDBApp";
 			};
 			name = Debug;
@@ -494,10 +587,12 @@
 			baseConfigurationReference = E4231D6BEB7ED2A4A3D3E334 /* Pods-TheOMDBAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TheOMDBAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.TheOMDBAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheOMDBAppTests/TheOMDBAppTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheOMDBApp.app/TheOMDBApp";
 			};
 			name = Release;

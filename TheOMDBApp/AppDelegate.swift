@@ -6,6 +6,7 @@
 //  Copyright © 2016 Pedro Cid. All rights reserved.
 //
 
+import Swinject
 import UIKit
 
 @UIApplicationMain
@@ -13,9 +14,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let container = Container() { container in
+        // Models
+        container.register(Networking.self) { _ in Network() }
+        
+        container.register(APIClient.self) { r in
+            OMDBAPIClient(network: r.resolve(Networking.self)!)
+        }
+        
+        container.register(ViewModel.self) { r in
+            OMDBViewModel(apiClient: r.resolve(APIClient.self)!)
+        }
+        
+        // Views
+        container.registerForStoryboard(MoviesTableViewController.self) {
+            r, c in
+            c.viewModel = r.resolve(ViewModel.self)!
+        }
+    }
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        let bundle = NSBundle(forClass: MoviesTableViewController.self)
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: bundle, container: container)
+        window.rootViewController = storyboard.instantiateInitialViewController()
+
+        
         return true
     }
 
