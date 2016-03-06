@@ -9,6 +9,7 @@ Sample project to demostrate some concepts:
 
 TODO:
 
+- Handle errors
 - Unit testing
 
 
