@@ -58,6 +58,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-TheOMDBAppTests/Result.framework'
   install_framework 'Pods-TheOMDBAppTests/Swinject.framework'
   install_framework 'Pods-TheOMDBAppTests/Nimble.framework'
+  install_framework 'Pods-TheOMDBAppTests/Nocilla.framework'
   install_framework 'Pods-TheOMDBAppTests/Quick.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -67,5 +68,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-TheOMDBAppTests/Result.framework'
   install_framework 'Pods-TheOMDBAppTests/Swinject.framework'
   install_framework 'Pods-TheOMDBAppTests/Nimble.framework'
+  install_framework 'Pods-TheOMDBAppTests/Nocilla.framework'
   install_framework 'Pods-TheOMDBAppTests/Quick.framework'
 fi

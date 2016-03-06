@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "669A7B74EF7D9DECA9AFE828"
+               BlueprintIdentifier = "74346A5F6256CF74D3057035"
                BuildableName = "Decodable.framework"
                BlueprintName = "Decodable"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -10,4 +10,5 @@ pod "Swinject"
 target 'TheOMDBAppTests' do
     pod 'Quick'
     pod 'Nimble’
+    pod 'Nocilla'
 end
