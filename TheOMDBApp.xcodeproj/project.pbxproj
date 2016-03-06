@@ -19,6 +19,7 @@
 		F57E7DEA1C8B39A50095B43A /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = F57E7DE91C8B39A50095B43A /* Readme.md */; };
 		F57E7DF41C8B3FA10095B43A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DF21C8B3FA10095B43A /* Network.swift */; };
 		F57E7DF51C8B3FA10095B43A /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E7DF31C8B3FA10095B43A /* Networking.swift */; };
+		F59251D41C8C868600EA14D0 /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = F59251D31C8C868600EA14D0 /* movie.json */; };
 		F5CB5EE11C8B0B3200DCD72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */; };
 		F5CB5EE61C8B0B3200DCD72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE41C8B0B3200DCD72E /* Main.storyboard */; };
 		F5CB5EE81C8B0B3200DCD72E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CB5EE71C8B0B3200DCD72E /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		F57E7DE91C8B39A50095B43A /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		F57E7DF21C8B3FA10095B43A /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		F57E7DF31C8B3FA10095B43A /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F59251D31C8C868600EA14D0 /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
 		F5CB5EDD1C8B0B3200DCD72E /* TheOMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CB5EE01C8B0B3200DCD72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5CB5EE51C8B0B3200DCD72E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		F5CB5EF41C8B0B3200DCD72E /* TheOMDBAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				F59251D31C8C868600EA14D0 /* movie.json */,
 				F5CB5EF71C8B0B3200DCD72E /* Info.plist */,
 				F57E7DD21C8B0CD20095B43A /* OMDBAPIClientTests.swift */,
 				F57E7DD11C8B0CD10095B43A /* TheOMDBAppTests-Bridging-Header.h */,
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59251D41C8C868600EA14D0 /* movie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
