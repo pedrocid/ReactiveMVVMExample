@@ -9,7 +9,7 @@ Sample project to demostrate some concepts:
 
 TODO:
 
-
+- Unit testing
 
 
 Sources of knowledge:
