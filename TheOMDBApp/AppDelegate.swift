@@ -22,14 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             OMDBAPIClient(network: r.resolve(Networking.self)!)
         }
         
-        container.register(ViewModel.self) { r in
-            OMDBViewModel(apiClient: r.resolve(APIClient.self)!)
+        container.register(DetailViewModel.self) { r in
+            MovieDetailModel(apiClient: r.resolve(APIClient.self)!)
         }
         
         // Views
-        container.registerForStoryboard(MoviesTableViewController.self) {
+        container.registerForStoryboard(MovieViewController.self) {
             r, c in
-            c.viewModel = r.resolve(ViewModel.self)!
+            c.viewModel = r.resolve(DetailViewModel.self)!
         }
     }
 
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
-        let bundle = NSBundle(forClass: MoviesTableViewController.self)
+        let bundle = NSBundle(forClass: MovieViewController.self)
         let storyboard = SwinjectStoryboard.create(name: "Main", bundle: bundle, container: container)
         window.rootViewController = storyboard.instantiateInitialViewController()
 

@@ -5,8 +5,13 @@ Sample project to demostrate some concepts:
 - Dependency injection
 - Unit Testing with Quick
 
-Sources of knowledge:
 
-Cell reuse idea from "iOS Cell Registration & Reusing with Swift Protocol Extensions and Generics" https://medium.com/@gonzalezreal/ios-cell-registration-reusing-with-swift-protocol-extensions-and-generics-c5ac4fb5b75e#.8ho7hei2c
+
+TODO:
+
+
+
+
+Sources of knowledge:
 
 Swinject and ReactiveCocoa use from "Dependency Injection in MVVM Architecture with ReactiveCocoa" https://yoichitgy.github.io/post/dependency-injection-in-mvvm-architecture-with-reactivecocoa-part-1-introduction/

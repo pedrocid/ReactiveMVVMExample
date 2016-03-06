@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import ReactiveCocoa
 
 protocol DetailViewModel {
     
-    var title: String { get }
-    var plot: String { get }
-    var year: String { get }
-    var director: String { get }
+    var title: MutableProperty<String> { get }
+    var plot: MutableProperty<String> { get }
+    var year: MutableProperty<String> { get }
+    var director: MutableProperty<String> { get }
 
+    func getMovieWithTitle(title: String)
 }
